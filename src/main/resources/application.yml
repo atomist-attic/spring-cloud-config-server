@@ -1,0 +1,17 @@
+info:
+  component: Configuration Server
+
+spring:
+  jmx:
+    default_domain: cloud.config.server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/atomist-project-templates/config-repo
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true

@@ -1,0 +1,19 @@
+
+$project_name
+===========================
+
+Originally created on {{creation_date}}.
+
+$description
+
+To run locally
+--------------
+
+This service is driven using Maven. To run locally simply execute the following from the command line:
+
+```shell
+> ./mvnw spring-boot:run
+```
+
+---
+Created by Atomist. Need Help? <a href="https://join.atomist.com/">Join our Slack team</a>
