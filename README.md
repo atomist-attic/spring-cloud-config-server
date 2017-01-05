@@ -36,7 +36,7 @@ Name | Required | Default | Description
 `version` | No | 0.1.0-SNAPSHOT | [Semantic version][semver] of the project.
 `description` | No | My new project | A brief description of the project.
 `root_package` | No | com.myorg | The root package for the generated service class.
-`git_repo_location` | No | https://github.com/atomist-rugs/config-repo | a Git repository location for configuration to serve (i.e. https://github.com/atomist-rugs/sample-config-repo)"
+`git_repo_location` | No | https://github.com/atomist-rugs/sample-config-repo | a Git repository location for configuration to serve (i.e. https://github.com/atomist-rugs/sample-config-repo)"
 
 [semver]: http://semver.org
 

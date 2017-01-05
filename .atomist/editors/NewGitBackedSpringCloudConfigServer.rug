@@ -73,15 +73,15 @@ param description: @any
 param root_package: @java_package
 
 @displayName "Git Repo Location"
-@description "a Git repository location for configuration to serve (i.e. https://github.com/atomist-project-templates/sample-config-repo)"
+@description "a Git repository location for configuration to serve (i.e. https://github.com/atomist-rugs/sample-config-repo)"
 @minLength 1
 @validInput "a valid URI"
 @optional
-@default "https://github.com/atomist-project-templates/config-repo"
+@default "https://github.com/atomist-rugs/sample-config-repo"
 param git_repo_location: @url
 
 let old_package = "com.atomist.configurationserver"
-let default_git_repo_location = "uri: https://github.com/atomist-project-templates/config-repo"
+let default_git_repo_location = "uri: https://github.com/atomist-rugs/sample-config-repo"
 
 SwitchReadmes
 PomParameterizer name = project_name

@@ -27,7 +27,7 @@ when
 then
   fileExists "README.md"
     and { !result.fileExists("LICENSE") }
-    and fileContains "src/main/resources/application.yml" "uri: https://github.com/atomist-project-templates/config-repo"
+    and fileContains "src/main/resources/application.yml" "uri: https://github.com/atomist-rugs/sample-config-repo"
 
 
 scenario NewGitBackedSpringCloudConfigServer should create a new project overriding the default location of the Git properties repository
@@ -68,4 +68,4 @@ then
     and fileContains "pom.xml" { "<groupId>" + group_id + "</groupId>" }
     and fileContains "pom.xml" { "<version>" + version + "</version>" }
     and fileContains "pom.xml" { "<description>" + description + "</description>" }
-    and fileContains "src/main/resources/application.yml" "uri: https://github.com/atomist-project-templates/config-repo"
+    and fileContains "src/main/resources/application.yml" "uri: https://github.com/atomist-rugs/sample-config-repo"
