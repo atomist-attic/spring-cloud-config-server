@@ -24,6 +24,9 @@ editor NewGitBackedSpringCloudConfigServer
 
 uses atomist-rugs.common-editors.PomParameterizer
 uses atomist-rugs.common-editors.PackageMove
+uses atomist-rugs.common-editors.RemoveApacheSoftwareLicense20
+uses atomist-rugs.common-editors.RemoveChangeLog
+uses atomist-rugs.common-editors.RemoveCodeOfConduct
 
 @displayName "Project Name"
 @description "name of your new project"
@@ -87,7 +90,9 @@ SwitchReadmes
 PomParameterizer name = project_name
 PackageMove new_package = root_package
 AddCreationDateToReadme
-DeleteLicense
+RemoveApacheSoftwareLicense20
+RemoveChangeLog
+RemoveCodeOfConduct
 
 with File when name="application.yml"
   do replace default_git_repo_location { "uri: " + git_repo_location }
@@ -118,10 +123,3 @@ editor AddCreationDateToReadme
 
 with File when path = "README.md"
   do replace "{{creation_date}}" { new Date().toISOString().split('T')[0] }
-
-
-@description "Delete license file from the template content"
-editor DeleteLicense
-
-with Project
-  do deleteFile "LICENSE"

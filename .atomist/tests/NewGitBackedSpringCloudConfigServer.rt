@@ -26,8 +26,10 @@ when
 
 then
   fileExists "README.md"
-    and { !result.fileExists("LICENSE") }
     and fileContains "src/main/resources/application.yml" "uri: https://github.com/atomist-rugs/sample-config-repo"
+    and { !result.fileExists("LICENSE") }
+    and { !result.fileExists("CHANGELOG.md") }
+    and { !result.fileExists("CODE_OF_CONDUCT.md") }
 
 
 scenario NewGitBackedSpringCloudConfigServer should create a new project overriding the default location of the Git properties repository
