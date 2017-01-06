@@ -56,7 +56,7 @@ param group_id: @group_id
 @minLength 1
 @validInput "MAJOR.MINOR.PATCH"
 @optional
-@default "0.0.1-SNAPSHOT"
+@default "0.1.0-SNAPSHOT"
 param version: @semantic_version
 
 @displayName "Project Description"
@@ -115,7 +115,7 @@ param description: @any
 let template = "readme.vm"
 
 with Project
-	do merge template to "README.md"
+  do merge template to "README.md"
 
 
 @description "Adds a creation date to the README.md"
