@@ -9,11 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 [Unreleased]: https://github.com/atomist-rugs/spring-cloud-config-server/compare/0.1.0...HEAD
 
-## [0.1.0] - 2017-05-01
+## [0.1.0] - 2017-01-06
 
 Initial release
 
-[0.1.0]: https://github.com/atomist-rugs/spring-cloud-config-server/compare/934f76...0.1.0
+[0.1.0]: https://github.com/atomist-rugs/spring-cloud-config-server/tree/0.1.0
 
 ### Added
 
