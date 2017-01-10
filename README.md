@@ -21,6 +21,8 @@ Cloud Config Server][spring-cloud-config-server] project.
 
 [spring-cloud-config-server]: https://cloud.spring.io/spring-cloud-config/
 
+[<img src="http://images.atomist.com/button/create-project.png" width="267" alt="Create a project with Atomist"/>](https://api.atomist.com/v1/projects/generators/35c508f8-0127-480b-a91f-a1c3b00b6532)
+
 #### Prerequisites
 
 There are no prerequisites to running this generator.
